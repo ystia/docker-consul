@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.12
 
 ENV S6_OVERLAY_VERSION=v1.19.1.1
 ENV GO_DNSMASQ_VERSION=1.0.7
@@ -38,7 +38,7 @@ ARG BUILD_DATE
 ARG VCS_REF
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.vcs-url="https://github.com/loicalbertin/docker-consul.git" \
+      org.label-schema.vcs-url="https://github.com/ystia/docker-consul.git" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.schema-version="1.0.0-rc1"
 
